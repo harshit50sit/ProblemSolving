@@ -58,6 +58,24 @@ public class LinkedList1 {
 			n = n.next;
 		}
 	}
+    public void insertAfter(int data,int position)
+    {
+        Node temp = head;
+        Node new_node = new Node(data);
+        if(position == 0)
+        {
+            new_node.data = data;
+            new_node.next = head;
+            head = new_node;
+        }
+        for(int i=0; i<position-2; i++)
+        {
+            temp = temp.next;
+        }
+        new_node.data = data;
+        new_node.next = temp.next;
+        temp.next = new_node;
+    }
 	public static void main(String ss[])
 	{
 		LinkedList1 l = new LinkedList1();
@@ -65,8 +83,9 @@ public class LinkedList1 {
 		while(true)
 		{
 			System.out.println();
-			System.out.println("1-Insert a data at beginning"+"\n"+"2-Insert a data at end"+"\n"+"3-To print the data"+"\n"+"4-Size of the list"+"\n"+"5-exit");
-			System.out.println("Enter choice");
+			System.out.println("1-Insert a data at beginning"+"\n"+"2-Insert a data at end"+"\n"+"3-To print the data"+"\n"+"4-Size of the list"+"\n"+"5-Insert a data at the specific position");
+            System.out.println("6-Deleting the fist node"+"\n"+"7-Deleting the last node"+"\n"+"8-Deleteing an intermediate node"+"\n"+"9-exit");
+            System.out.println("Enter choice");
 			int ch = sc.nextInt();
 			switch(ch)
 			{
@@ -82,7 +101,12 @@ public class LinkedList1 {
 				    break;
             case 4:System.out.println("length of the list is:->"+l.listLength());
                     break;
-			case 5:System.exit(0);
+            case 5:System.out.println("Enter position and data");
+                   int pos = sc.nextInt();
+                   int d1 = sc.nextInt();
+                   l.insertAfter(d1,pos);
+                   break;
+			case 8:System.exit(0);
 			default:System.out.println("Invalid choice");
 			}
 			

@@ -106,7 +106,7 @@ public class LinkedList1 {
                    int d1 = sc.nextInt();
                    l.insertAfter(d1,pos);
                    break;
-			case 8:System.exit(0);
+			case 9:System.exit(0);
 			default:System.out.println("Invalid choice");
 			}
 			

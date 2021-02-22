@@ -38,6 +38,17 @@ public class LinkedList1 {
 		last.next = new_node;
 		
 	}
+    public int listLength()
+    {
+        Node temp = head;
+        int len = 0;
+        while(temp != null)
+        {
+            len++;
+            temp = temp.next;
+        }
+        return(len);
+    }
 	public void printList()
 	{
 		Node n = head;
@@ -54,7 +65,7 @@ public class LinkedList1 {
 		while(true)
 		{
 			System.out.println();
-			System.out.println("1-Insert a data at beginning"+"\n"+"2-Insert a data at end"+"\n"+"3-To print the data"+"\n"+"4-exit");
+			System.out.println("1-Insert a data at beginning"+"\n"+"2-Insert a data at end"+"\n"+"3-To print the data"+"\n"+"4-Size of the list"+"\n"+"5-exit");
 			System.out.println("Enter choice");
 			int ch = sc.nextInt();
 			switch(ch)
@@ -69,7 +80,9 @@ public class LinkedList1 {
 			      break;
 			case 3:l.printList();
 				    break;
-			case 4:System.exit(0);
+            case 4:System.out.println("length of the list is:->"+l.listLength());
+                    break;
+			case 5:System.exit(0);
 			default:System.out.println("Invalid choice");
 			}
 			

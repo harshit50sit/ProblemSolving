@@ -31,7 +31,7 @@ public class NumberBalanced {
         else
             return false;
     }
-    public static void main(String ss)
+    public static void main(String ss[])
     {
         Scanner sc = new Scanner(System.in);
         String N = sc.next();

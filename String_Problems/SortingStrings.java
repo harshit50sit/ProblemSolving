@@ -48,6 +48,7 @@ public class SortingStrings {
         {
             res = res + c;
         }
+        System.out.println("Result is:");
         return(res);
 
     }

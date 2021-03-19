@@ -1,5 +1,6 @@
 import java.util.*;
 public class ReverseLinkedList {
+    //static Node head;
     Node head;
     static class Node
     {
@@ -27,6 +28,22 @@ public class ReverseLinkedList {
         }
         last.next = new_node;
     }
+    //Node reverse(Node node)
+    public void reverse()
+    {
+        Node prev = null;
+        Node current = head;
+        Node next = null;
+        while(current != null)
+        {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        head = prev;
+        //return node;
+    }
     public void printList()
     {
         Node n = head;
@@ -53,6 +70,9 @@ public class ReverseLinkedList {
                        l1.insertData(d);
                        break;
                 case 2:System.out.println("Reversed Linked List");
+                       //head = l1.reverse(head);
+                       l1.reverse();
+                       l1.printList();
                        break;
                 case 3:l1.printList();
                        break;

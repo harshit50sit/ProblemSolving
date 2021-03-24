@@ -1,4 +1,4 @@
-package Data_Structure_and_algorithms_Using_Java.LinkedList;
+
 import java.util.*;
 //Insertion at front-void push()
 //Insertion at end- void append()

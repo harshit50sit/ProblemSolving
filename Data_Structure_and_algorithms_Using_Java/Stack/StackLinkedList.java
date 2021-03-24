@@ -1,5 +1,4 @@
 //Implementation of stack using linklist
-package Data_Structure_and_algorithms_Using_Java.Stack;
 import java.util.*;
 public class StackLinkedList {
     StackNode top;

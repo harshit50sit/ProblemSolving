@@ -1,4 +1,4 @@
-package Data_Structure_and_algorithms_Using_Java.Stack;
+
 import java.util.*;
 public class FixedSizeArrayStack {
     static final int max =100;

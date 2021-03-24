@@ -1,4 +1,3 @@
-package Data_Structure_and_algorithms_Using_Java.LinkedList;
 
 public class LinkedList {
 	Node head;

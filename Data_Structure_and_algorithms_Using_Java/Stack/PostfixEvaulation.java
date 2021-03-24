@@ -54,8 +54,8 @@ public class PostfixEvaulation {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a expression");
         String exp = sc.next();
-        //String tokens[] = exp.split("");
-        System.out.println(tokens.length);
+        String tokens[] = exp.split("");
+        //System.out.println(tokens.length);
         System.out.println(expressionEvaluation(tokens));
     }
 }

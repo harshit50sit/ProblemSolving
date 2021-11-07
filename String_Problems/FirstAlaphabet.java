@@ -1,4 +1,4 @@
-package String_Problems;
+//package String_Problems;
 import java.util.*;
 public class FirstAlaphabet {
     public static String printFirstLetter(String str)

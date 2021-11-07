@@ -2,7 +2,7 @@
 //S = "ckjkUUYII"
 //Output: 5
 
-package String_Problems;
+//package String_Problems;
 import java.util.*;
 public class CamelCase {
     public static void main(String ss[])
@@ -18,6 +18,7 @@ public class CamelCase {
             }
         }
         System.out.println(c);
+        sc.close();
     }
     
 }

@@ -8,7 +8,6 @@ Output: deeIRSfrsTUX
 S = srbDKi
 Output: birDKs
 */
-package String_Problems;
 import java.util.*;
 public class SortingStrings {
     public static String caseSort(String str)

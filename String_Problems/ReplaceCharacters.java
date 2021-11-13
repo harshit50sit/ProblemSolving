@@ -1,4 +1,4 @@
-package String_Problems;
+//package String_Problems;
 import java.util.*;
 public class ReplaceCharacters {
     public static void main(String ss[])

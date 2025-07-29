@@ -6,7 +6,12 @@ package Data_Structure_and_algorithms_Using_Java.Arrays;
     starting Index = 0
     output = 3
     // Explanation: 0 -> 1 -> 2 -> 0, so total 3 jumps are required to come back to the starting position
-
+    Enter the size of the array
+    3
+    Enter the elements of the array
+    1 1 2
+    Enter the starting index
+    0
  */
 import java.util.Scanner;
 public class JumspCyclicArray {

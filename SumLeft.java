@@ -7,8 +7,8 @@ public class SumLeft {
             totalSum = totalSum + num;
         }
         for(int i=0; i<arr.length; i++){
-            totalSum = totalSum - arr[i];
-            if(leftSum == totalSum){
+            int rightSum = totalSum - leftSum -  arr[i];
+            if(leftSum == rightSum){
                 return arr[i];
             }
             leftSum += arr[i];
